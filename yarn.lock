@@ -1625,6 +1625,7 @@ __metadata:
     "@babel/core": ^7.16.0
     "@babel/preset-env": ^7.16.0
     babel-loader: ^8.2.3
+    bcryptjs: ^2.4.3
     connect-flash: ^0.1.1
     connect-mongo: ^4.6.0
     core-js: ^3.19.1
@@ -1861,6 +1862,13 @@ __metadata:
   version: 1.5.1
   resolution: "base64-js@npm:1.5.1"
   checksum: 669632eb3745404c2f822a18fc3a0122d2f9a7a13f7fb8b5823ee19d1d2ff9ee5b52c53367176ea4ad093c332fd5ab4bd0ebae5a8e27917a4105a4cfc86b1005
+  languageName: node
+  linkType: hard
+
+"bcryptjs@npm:^2.4.3":
+  version: 2.4.3
+  resolution: "bcryptjs@npm:2.4.3"
+  checksum: 0e80ed852a41f5dfb1853f53ee14a7390b0ef263ce05dba6e2ef3cd919dfad025a7c21ebcfe5bc7fa04b100990edf90c7a877ff7fe623d3e479753253131b629
   languageName: node
   linkType: hard
 
