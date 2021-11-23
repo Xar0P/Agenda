@@ -67,7 +67,7 @@ class Contato {
 
     static async delete(id) {
         if(typeof id !== 'string') return;
-        return await ContatoModel.findOneAndDelete(id)
+        return await ContatoModel.findOneAndDelete({_id: id});
     }
 };
 
