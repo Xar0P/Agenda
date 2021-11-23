@@ -18,10 +18,6 @@ class Contato {
         this.contato = null;
     }
 
-    static async buscaPorId(id) {
-        if(typeof id !== 'string') return;
-        return await ContatoModel.findById(id);
-    }
 
     async register() {
         this.valida();
@@ -57,6 +53,21 @@ class Contato {
         this.valida();
         if(this.errors.length > 0) return;
         this.contato = await ContatoModel.findByIdAndUpdate(id, this.body, { new: true });
+    }
+
+    static async buscaPorId(id) {
+        if(typeof id !== 'string') return;
+        return await ContatoModel.findById(id);
+    }
+
+    static async buscaContatos() {
+        return await ContatoModel.find()
+            .sort({ criadoEM: -1 });
+    }
+
+    static async delete(id) {
+        if(typeof id !== 'string') return;
+        return await ContatoModel.findOneAndDelete(id)
     }
 };
 

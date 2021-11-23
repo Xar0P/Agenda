@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":"AAAAA,QAAQC,IAAI","sources":["webpack://agenda/./frontend/main.js"],"sourcesContent":["console.log('Olá!');"],"names":["console","log"],"sourceRoot":""}
